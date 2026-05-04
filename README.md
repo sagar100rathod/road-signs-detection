@@ -1,8 +1,12 @@
 # Traffic Signs Detection on MTSD using RT-DETR
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sagar100rathod/road-signs-detection/blob/main/road_signs_detection.ipynb)
+
 This repository builds an end-to-end road sign detection pipeline on the [Mapillary Traffic Signs Dataset (MTSD)](https://www.mapillary.com/dataset/trafficsign) using [RT-DETR](https://docs.ultralytics.com/models/rtdetr/). The workflow combines label normalization, tiled training, and SAHI-based inference to improve detection of small and distant traffic signs in high-resolution street scenes.
 
 ![image](./images/traffic-signs-collection.png)
+
+
 
 ## Overview
 
@@ -50,12 +54,16 @@ The training run shows stable localization learning and meaningful qualitative p
 
 Reported validation results from the notebook:
 
-- **Precision**: about 0.44
-- **Recall**: about 0.33
-- **mAP@50**: about 0.33
+- **Precision**: 0.44107
+- **Recall**: 0.3316
+- **mAP@50**: 0.33383
 - **mAP@50-95**: about 0.28
 
 A key qualitative finding is that SAHI improves detection of small and distant signs that are often missed after full-image resizing. In the notebook example, a `regulatory height restriction limit` sign that is misclassified under standard inference is recovered with higher confidence using sliced inference.
+
+#### Sample Video Inference
+
+![Traffic Signs Detection Demo](./inference_result/traffic_signs_detection_road_drive_video.gif)
 
 ## Key Findings
 
