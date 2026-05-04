@@ -61,7 +61,20 @@ Reported validation results from the notebook:
 
 A key qualitative finding is that SAHI improves detection of small and distant signs that are often missed after full-image resizing. In the notebook example, a `regulatory height restriction limit` sign that is misclassified under standard inference is recovered with higher confidence using sliced inference.
 
-#### Sample Video Inference
+## Sample Inference
+| ![Inference1](./runs/detect/predict/-1CbHBwZ5qEz-uT8-RC3tw_1013_1013.jpg)                                   |
+|-------------------------------------------------------------------------------------------------------------|
+| ![Inference2](./runs/detect/predict/-64a-Nxf8KSE2xM9EF90zg.jpg)                                             |
+|-------------------------------------------------------------------------------------------------------------|   
+| ![Inference3](./runs/detect/predict/-90LVyAGTR2pzUEmy8NY5w_1013_0.jpg)                                      |
+|-------------------------------------------------------------------------------------------------------------|   
+| ![Inference4](./runs/detect/predict/1TF-WoZxB6wR0ue510_YNA.jpg)                                             |
+|-------------------------------------------------------------------------------------------------------------|   
+| ![Inference5](./runs/detect/predict/1YjAzB55MjwIcA1hFthafw.jpg)                                             |
+|-------------------------------------------------------------------------------------------------------------|   
+                                         
+
+## Sample Video Inference
 
 ![Traffic Signs Detection Demo](./inference_result/traffic_signs_detection_road_drive_video.gif)
 
